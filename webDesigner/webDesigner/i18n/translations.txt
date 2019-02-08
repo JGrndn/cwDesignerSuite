@@ -1,0 +1,12 @@
+diagram_option_zoomin = Zoom In
+diagram_option_zoomout = Zoom Out
+diagram_option_resize = Resize the diagram
+diagram_option_search = Search in the diagram
+diagram_option_fullscreen = FullScreen
+diagram_option_fullscreen_normal = Reduce to normal size
+diagram_option_parent_diagram = Go to parent diagram
+index_search= Filter
+global_yes= Yes
+global_no= No
+search_option_reset = Reset
+search_option_search = Search

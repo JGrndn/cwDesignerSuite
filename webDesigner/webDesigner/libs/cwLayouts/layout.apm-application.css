@@ -1,0 +1,55 @@
+li.apm-application{
+  display:inline-block;
+  vertical-align:top;
+  width:150px;
+  margin:5px;
+  min-height:60px;
+  font-size:11px;
+  border:1px solid #E6E6FA;
+}
+
+div.apm-application{
+  padding:5px;
+  text-align:center;
+  background-color: #E6E6FA;
+}
+
+div.apm-application a{
+    color:#004488;
+    font-weight:normal;
+}
+
+ul.apm-application{
+   margin:0px;
+  padding:0px; 
+}
+
+ul.apm-location-flag{
+  margin:0px;
+  padding:0px;
+  width:100%;
+  float:left;
+  display: inline-block;
+  
+  text-align:left;
+
+}
+li.apm-location-flag{
+  display: inline-block;
+  margin:2px;
+  text-align:left;
+}
+
+div.apm-application-tooltip-description{
+  text-align: left;
+}
+
+
+
+.cw-chart-tooltip{
+  display: none;
+}
+
+span.hidden{
+  display: none;
+}

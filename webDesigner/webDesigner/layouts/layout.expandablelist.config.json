@@ -1,0 +1,6 @@
+{
+	"name" : "expandablelist", 
+	"display-name" : "Expandable List", 
+	"description" : "Simple ul/li list with div/a container for the name, the list is expected to be expandable.",
+	"js-class-name" : "LayoutListExpandable"
+}

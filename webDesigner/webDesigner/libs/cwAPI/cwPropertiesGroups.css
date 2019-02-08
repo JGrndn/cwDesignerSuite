@@ -1,0 +1,51 @@
+﻿
+table.cw-propertiesTable {
+	width:100%;
+}
+
+table.cw-propertiesTable th{
+	width:30%;
+}
+
+table.cw-propertiesTable td{
+	width:70%;
+}
+div.cw-propertiesTable-header
+{
+padding:5px;
+text-align:center;
+}
+
+div.cw-propertiesGroup-memotext{
+  width: 100%;
+}
+
+div.cw-propertiesGroup-memotext-content{
+  padding:5px;
+}
+
+div.cw-propertybox
+{
+    width:200px;
+    margin:5px;
+}
+
+div.cw-propertybox-header
+{
+padding:5px;
+text-align:center;
+}
+
+div.cw-propertybox-content
+{
+    padding:5px;
+    text-align:center;
+}
+
+.cw-propertybox{
+	float: left;
+}
+
+.cw-propertybox-content {
+	height:20px;
+}

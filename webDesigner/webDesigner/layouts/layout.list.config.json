@@ -1,0 +1,7 @@
+{
+	"name" : "list", 
+	"display-name" : "List", 
+	"description" : "Simple ul/li list with div/a container for the name",
+	"js-class-name" : "LayoutList",
+	"enable-behaviour" : true
+}

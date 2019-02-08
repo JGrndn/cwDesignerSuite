@@ -1,0 +1,31 @@
+﻿#cw-tooltip {
+  position: absolute;
+  z-index: 3000;
+  border: 1px solid #999;
+  background-color:  white;
+  color:#3E3E3E;
+  border-radius:5px;
+  -moz-border-radius:5px;   
+  padding: 10px;
+  font-size:10px;
+  text-align:center;
+}
+
+.cw-tooltip-left{
+  text-align:left !important;
+}
+
+#cw-tooltip h3{
+  margin:0px;
+  padding:0px;
+  font-size:12px;
+}
+
+.cw-tooltip-custom{
+  background-color:white!important;
+}
+
+.cw-tooltip-custom h3{
+  margin:0px;
+  padding:0px;
+}

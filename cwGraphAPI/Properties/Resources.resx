@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LAUNCHER_OPTIONS_BUTTONS_OPTIONS_CONTEXT_MENU_ENABLE_MODEL" xml:space="preserve">
+    <value>Enable Model</value>
+  </data>
+  <data name="CWDESIGNER_OPEN_DIAGRAM" xml:space="preserve">
+    <value>Open the diagram</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="image_model_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_model_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_model_small</comment>
+  </data>
+  <data name="image_option_prev_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_option_prev_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_option_prev_32x32</comment>
+  </data>
+  <data name="ERROR_WARN_MISSING_cwLightObjectType" xml:space="preserve">
+    <value>The requested Object Type ID {0} is missing</value>
+  </data>
+  <data name="image_loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_loading.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_loading</comment>
+  </data>
+  <data name="CWDESIGNER_MANY_DIAGRAM_GENERATED" xml:space="preserve">
+    <value>diagrams have been correctly generated</value>
+  </data>
+  <data name="CWDESIGNER_ONE_DIAGRAM_GENERATED_DONE" xml:space="preserve">
+    <value>Your diagram has been correctly generated</value>
+  </data>
+  <data name="image_option_add_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_option_add_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_option_add_32x32</comment>
+  </data>
+  <data name="LAUNCHER_OPTIONS_BUTTONS_OPTIONS_CONTEXT_MENU_ADD_ITEM" xml:space="preserve">
+    <value>Add Item</value>
+  </data>
+  <data name="CWDESIGNER_ERROR_WHILE_GENERATING" xml:space="preserve">
+    <value>An error occured while generating diagram</value>
+  </data>
+  <data name="image_option_close_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_option_close_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_option_close_32x32</comment>
+  </data>
+  <data name="LAUNCHER_OPTIONS_BUTTONS_OPTIONS_TOOLTIP" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="LAUNCHER_OPTIONS_BUTTONS_CLOSE_TOOLTIP" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="BUTTON_CLOSE" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="LAUNCHER_OPTIONS_BUTTONS_BACK_TOOLTIP" xml:space="preserve">
+    <value>Return to Models</value>
+  </data>
+  <data name="image_logo_graphapi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_logo_graphapi.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_logo_graphapi</comment>
+  </data>
+  <data name="image_model_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_model_hover.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_model_hover</comment>
+  </data>
+  <data name="PSF_PROPERTY_FORMAT_ERROR" xml:space="preserve">
+    <value>Next Step</value>
+  </data>
+  <data name="PSF_PROPERTY_VALUE_CANT_BE_EMPTY" xml:space="preserve">
+    <value>The value can't be empty</value>
+  </data>
+  <data name="PSF_VALIDATION_RULE_TOOLTIP_TITLE_VALIDATION_ERROR" xml:space="preserve">
+    <value>Next Step</value>
+  </data>
+  <data name="PSF_VN_CANT_DELETE_FROM_GUI" xml:space="preserve">
+    <value>Impossible to delete the root node, Please use the Casewise Administrator to delete the item</value>
+  </data>
+  <data name="FORM_ADDITEM_BUTTON_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="FORM_ADDITEM_BUTTON_CREATE" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="FORM_ADDITEM_ITEM_ALEADY_EXISTS" xml:space="preserve">
+    <value>The item already exists, please choose a new name</value>
+  </data>
+  <data name="FORM_ADDITEM_LABEL_SET_ITEM_NAME" xml:space="preserve">
+    <value>New auto diagram template</value>
+  </data>
+  <data name="PSF_CONFIGURATION_NODE_SAVE_KO_BECAUSE_RULES_NOT_RESPECTED" xml:space="preserve">
+    <value>Please take care of errors before saving the node.</value>
+  </data>
+  <data name="PSF_CONFIGURATION_NODE_SAVE_OK" xml:space="preserve">
+    <value>The node has been saved.</value>
+  </data>
+  <data name="Casewise_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Casewise_Icon.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Casewise_Icon</comment>
+  </data>
+  <data name="GUI_EDITMODE_GROUPBOXDESIGN_TEXT" xml:space="preserve">
+    <value>Layouts</value>
+  </data>
+  <data name="GUI_EDITMODE_GROUPBOXOPTIONS_TEXT" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="image_tvicon_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_tvicon_delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_tvicon_delete</comment>
+  </data>
+  <data name="image_tvicon_minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_tvicon_minus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_tvicon_minus</comment>
+  </data>
+  <data name="image_tvicon_node" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_tvicon_node.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_tvicon_node</comment>
+  </data>
+  <data name="image_tvicon_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_tvicon_plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_tvicon_plus</comment>
+  </data>
+  <data name="image_tvicon_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_tvicon_save.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_tvicon_save</comment>
+  </data>
+  <data name="PSF_CONFIGURATION_NODE_NODEUUID_HELP" xml:space="preserve">
+    <value>The UUID of the object inside the repository</value>
+  </data>
+  <data name="PSF_CONFIGURATION_NODE_NODEUUID_NAME" xml:space="preserve">
+    <value>Node UUID</value>
+  </data>
+  <data name="PSF_TN_ADD_OBJECT_TYPE" xml:space="preserve">
+    <value>Add Object Type</value>
+  </data>
+  <data name="PSF_TN_CTX_COLLAPSE" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="PSF_TN_CTX_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="PSF_TN_CTX_EXPAND_ALL" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="PSF_TN_CTX_SAVE" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="PSF_TN_NODE_ASSOCIATION_TYPE_HELP" xml:space="preserve">
+    <value>If the association type is used, the selection will be done on the target objects of the provided association type</value>
+  </data>
+  <data name="PSF_TN_NODE_ASSOCIATION_TYPE_NAME" xml:space="preserve">
+    <value>Association Type To Target</value>
+  </data>
+  <data name="PSF_TN_NODE_CTX_ADD_ASSOCIATION_TYPE" xml:space="preserve">
+    <value>Add Association Type</value>
+  </data>
+  <data name="PSF_TN_NODE_NAME_HELP" xml:space="preserve">
+    <value>The name of the node in order to find and remeber it easily</value>
+  </data>
+  <data name="PSF_TN_NODE_NAME_NAME" xml:space="preserve">
+    <value>Node Name</value>
+  </data>
+  <data name="PSF_TN_NODE_OBJECT_TYPE_HELP" xml:space="preserve">
+    <value>The object type you want to run the operation on</value>
+  </data>
+  <data name="PSF_TN_NODE_OBJECT_TYPE_NAME" xml:space="preserve">
+    <value>Object Type</value>
+  </data>
+  <data name="PSF_TN_NODE_OG_FILTER_AND_HELP" xml:space="preserve">
+    <value>To filter the object type using properties, AND condition</value>
+  </data>
+  <data name="PSF_TN_NODE_OG_FILTER_AND_NAME" xml:space="preserve">
+    <value>Filter Properties (AND)</value>
+  </data>
+  <data name="PSF_TN_NODE_OG_OGID_HELP" xml:space="preserve">
+    <value>The object group ID is used by the Web Designer in order to select the Object Group</value>
+  </data>
+  <data name="PSF_TN_NODE_OG_OGID_NAME" xml:space="preserve">
+    <value>Object Group ID</value>
+  </data>
+  <data name="PSF_TN_NODE_OG_SELECTEDPROPERTIES_HELP" xml:space="preserve">
+    <value>Select the properties to export (NAME should always be selected : default behaviour)</value>
+  </data>
+  <data name="PSF_TN_NODE_OG_SELECTEDPROPERTIES_NAME" xml:space="preserve">
+    <value>Selected Properties</value>
+  </data>
+  <data name="PSF_TN_NODE_OG_SORTON_HELP" xml:space="preserve">
+    <value>The property which will be used to sort the objects</value>
+  </data>
+  <data name="PSF_TN_NODE_OG_SORTON_NAME" xml:space="preserve">
+    <value>Sort On</value>
+  </data>
+  <data name="PSF_TN_NODE_OG_SORTON_REVERSE_HELP" xml:space="preserve">
+    <value>if the sort by should be reversed</value>
+  </data>
+  <data name="PSF_TN_NODE_OG_SORTON_REVERSE_NAME" xml:space="preserve">
+    <value>Sort Reverse</value>
+  </data>
+  <data name="PSF_TN_POPUP_DELETE_NODE_TEXT" xml:space="preserve">
+    <value>Delete Confirmation Required</value>
+  </data>
+  <data name="PSF_TN_POPUP_DELETE_NODE_TITLE" xml:space="preserve">
+    <value>For Node : {0}</value>
+  </data>
+  <data name="GUI_APPEND_ERROR" xml:space="preserve">
+    <value>{0} on node {1} which is a {2}</value>
+  </data>
+  <data name="PSF_TN_FORMAT_ERROR_ON_PROPERTY" xml:space="preserve">
+    <value>Please fill the {0} property with a valid value</value>
+  </data>
+  <data name="ERROR_CONFIGURATION_FILE_NOT_FOUND" xml:space="preserve">
+    <value>The configuration file for {0} was not found, please create one next to the exe</value>
+  </data>
+  <data name="PSF_DBLINK_ERROR" xml:space="preserve">
+    <value>You connection to the repositroy was closed please re-perform your operation</value>
+  </data>
+  <data name="APPLICATION_WILL_RESTART" xml:space="preserve">
+    <value>The application will now restart.</value>
+  </data>
+  <data name="image_tvicon_generate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_tvicon_generate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_tvicon_generate</comment>
+  </data>
+  <data name="image_tvicon_layout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_tvicon_layout.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_tvicon_layout</comment>
+  </data>
+  <data name="image_tvicon_reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_tvicon_reload.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_tvicon_reload</comment>
+  </data>
+  <data name="PSF_VN_FLOAT_VALUE" xml:space="preserve">
+    <value>Please fill with a float value using a dot as a separator like : 1.0 or 0.5</value>
+  </data>
+  <data name="image_option_help_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_option_help_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>image_option_help_32x32</comment>
+  </data>
+  <data name="LAUNCHER_OPTIONS_BUTTONS_HELP_TOOLTIP" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="LAUNCHER_OPTIONS_TOOLTIP_ADD_ITEM" xml:space="preserve">
+    <value>Add an item</value>
+  </data>
+  <data name="LAUNCHER_OPTIONS_TOOLTIP_ENABLE_MODEL" xml:space="preserve">
+    <value>Enable a model</value>
+  </data>
+  <data name="CTX_DESELECT_ALL" xml:space="preserve">
+    <value>Deselect All</value>
+  </data>
+  <data name="CTX_SELECT_ALL" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="PSF_FILTER_HEADER_OPERATION" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="PSF_FILTER_HEADER_PROPERTY" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="PSF_FILTER_HEADER_VALUE" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="TEXT_WARNING" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="TEXT_OPTIONS" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="TEXT_NO_LICENCE_AVAILABLE" xml:space="preserve">
+    <value>No Licence available for this feature.</value>
+  </data>
+  <data name="ERROR_OBJETTYPE_IS_NOT_IN_PALETTEENTRY" xml:space="preserve">
+    <value>Required Object Type {0} doesn't exists in the template {1} Palette.</value>
+  </data>
+  <data name="TEXT_OPERATION_CANCELLED" xml:space="preserve">
+    <value>The operation has been cancelled</value>
+  </data>
+  <data name="ERROR_XMLIMPORTEXPORT" xml:space="preserve">
+    <value>An error occured while enabling the model {0}:{1} please check the error file located {2} for more information.</value>
+  </data>
+  <data name="PSF_TN_LABEL_SHOULD_HAVE_LESSTHAN_255_CHAR" xml:space="preserve">
+    <value>Please make sure the required name is under than 255 characters</value>
+  </data>
+  <data name="TEXT_SAVEREQUIRED_ON_CLOSE" xml:space="preserve">
+    <value>You have not saved your configuration, do you wish to save it?</value>
+  </data>
+  <data name="TEXT_CATEGORY_UNDEFINED" xml:space="preserve">
+    <value>Undefined</value>
+  </data>
+  <data name="TEXT_FALSE" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="TEXT_TRUE" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="LAUNCHER_WARNING_TEXT" xml:space="preserve">
+    <value>Casewise Labs - No support is provided by Casewise HelpDesk</value>
+  </data>
+</root>

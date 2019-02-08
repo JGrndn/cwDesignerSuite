@@ -1,0 +1,6 @@
+{
+  "name" : "diagram-box", 
+  "display-name" : "Diagram Box", 
+  "description" : "Box around the diagrams",
+  "js-class-name" : "LayoutDiagramBox"
+}

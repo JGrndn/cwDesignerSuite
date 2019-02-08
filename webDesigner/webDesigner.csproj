@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <LibConfigurationPath>..\cwGraphAPI\lib\2015</LibConfigurationPath>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{789040ED-3FCB-40AD-9044-D2B8A60BE924}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Casewise.webDesigner</RootNamespace>
+    <AssemblyName>webUtility</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>webDesigner\images\casewise.ico</ApplicationIcon>
+    <StartupObject>Casewise.webDesigner.Program</StartupObject>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>cwWebDesigner.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <LibConfigurationPath>2015</LibConfigurationPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'R2011|x86' ">
+    <LibConfigurationPath>2011</LibConfigurationPath>
+    <OutputPath>bin\Release2011\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'R2013|x86' ">
+    <LibConfigurationPath>2013</LibConfigurationPath>
+    <OutputPath>bin\Release2013\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'R2015|x86'">
+    <LibConfigurationPath>2015</LibConfigurationPath>
+    <OutputPath>bin\Release2015\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Casewise.Services.PropertyInterfaces, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\cwGraphAPI\lib\$(LibConfigurationPath)\Casewise.Services.PropertyInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Casewise.Shared.Definitions, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\cwGraphAPI\lib\$(LibConfigurationPath)\Casewise.Shared.Definitions.dll</HintPath>
+    </Reference>
+    <Reference Include="CasewiseServices, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\cwGraphAPI\lib\$(LibConfigurationPath)\CasewiseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="ICMDataProvider, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\cwGraphAPI\lib\$(LibConfigurationPath)\ICMDataProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\cwGraphAPI\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SVG">
+      <HintPath>..\cwGraphAPI\lib\$(LibConfigurationPath)\SVG.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Win32Facade">
+      <HintPath>..\cwGraphAPI\lib\$(LibConfigurationPath)\Win32Facade.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFEGraphics">
+      <HintPath>..\cwGraphAPI\lib\$(LibConfigurationPath)\WPFEGraphics.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Sources\Client-Packages\cwClientPackageManager.cs" />
+    <Compile Include="Sources\Client-Packages\GoogleClosure.cs" />
+    <Compile Include="Sources\diagramDesigner\cwDiagramDesignerDesignNode.cs" />
+    <Compile Include="Sources\diagramDesigner\cwDiagramDesignerLayoutIncludeType.cs" />
+    <Compile Include="Sources\diagramDesigner\cwDiagramDesignerLayoutNode.cs" />
+    <Compile Include="Sources\GUI\webDesignerCreateItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\webDesignerCreateItemForm.Designer.cs">
+      <DependentUpon>webDesignerCreateItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\Libs\Diagram\CwJoiner.cs" />
+    <Compile Include="Sources\Libs\Diagram\CwShape.cs" />
+    <Compile Include="Sources\Libs\Diagram\CwStyle.cs" />
+    <Compile Include="Sources\Libs\Diagram\CwFont.cs" />
+    <Compile Include="Sources\Libs\Diagram\cwWebDesignerDiagramManager.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerGenerateDiagramHierarchy.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerPicturesExportcs.cs" />
+    <Compile Include="Sources\Libs\Diagram\Palette\CwPaletteRegion.cs" />
+    <Compile Include="Sources\Libs\Diagram\Palette\CwPaletteEntry.cs" />
+    <Compile Include="Sources\Nodes\Behaviours\cwWebDesignerTreeNodeBehaviourTreeView.cs" />
+    <Compile Include="Sources\Nodes\Behaviours\cwWebDesignerTreeNodeBehaviour.cs" />
+    <Compile Include="Sources\Nodes\Behaviours\cwWebDesignerTreeNodeBehaviourAccordion.cs" />
+    <Compile Include="Sources\Nodes\Behaviours\cwWebDesignerTreeNodeBehaviourWorldMap.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodeObjectNodeOnDiagram.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodeObjectNodeIntersectionObjectType.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodeObjectNodeAssociationType.cs" />
+    <Compile Include="Sources\GUI\cwWebDesignerGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodeObjectNode.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodeObjectNodeObjectType.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodePage.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodePages.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodePagesIndex.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodePagesSingle.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodePropertiesGroup.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodeSite.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodeTab.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodeTemplateNode.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodeTemplateNodes.cs" />
+    <Compile Include="Sources\Nodes\cwWebDesignerTreeNodeUsedTemplateNode.cs" />
+    <Compile Include="Sources\Nodes\Layouts\cwWebDesignerTreeNodeInterfaceLayout.cs" />
+    <Compile Include="Sources\Nodes\Layouts\cwWebDesignerTreeNodeLayout.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerBehaviourManager.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerExportDiagrams.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerFileManager.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerFont.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerGlobalFiles.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerIndexPageGenerator.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerJSONTools.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerLayoutManager.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerOutputLayoutManager.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerSearchEngine.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerSinglePageGenerator.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerStyle.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerTabManager.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerTools.cs" />
+    <Compile Include="Sources\Libs\cwWebDesignerWriter.cs" />
+    <Compile Include="Sources\Program.cs" />
+    <Compile Include="Sources\webDesignerOperation.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.fr-FR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.fr-FR.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.fr-FR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.fr-FR.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sources\GUI\cwWebDesignerGUI.resx">
+      <DependentUpon>cwWebDesignerGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\GUI\webDesignerCreateItemForm.resx">
+      <DependentUpon>webDesignerCreateItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cwWebDesigner.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Samples\batch-webUtility.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Samples\webUtility.exe.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="webDesigner\behaviours\behaviour.accordion.config.json" />
+    <None Include="webDesigner\layouts\layout.a2zlist.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="webDesigner\layouts\layout.list-box-with-properties.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="webDesigner\layouts\layout.apm-application.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="webDesigner\layouts\layout.diagram-box.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="webDesigner\layouts\layout.diagram.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="webDesigner\layouts\layout.empty.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="webDesigner\layouts\layout.list-box.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="webDesigner\layouts\layout.list.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="webDesigner\layouts\layout.listbycategory.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="webDesigner\layouts\layout.single-page.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="XMLExport\importWebDesignerObjectType.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casewise_logo_webDesigner_h100.png" />
+    <None Include="Resources\webItem_small.png" />
+    <None Include="Resources\image_tvicon_world.png" />
+    <None Include="Resources\image_tvicon_behaviour.png" />
+    <None Include="Resources\image_tvicon_page_index.png" />
+    <None Include="Resources\image_tvicon_page_single.png" />
+    <None Include="Resources\image_tvicon_pages.png" />
+    <None Include="Resources\image_tvicon_propertiesgroup.png" />
+    <None Include="Resources\image_tvicon_tab.png" />
+    <None Include="Resources\image_tvicon_template_node.png" />
+    <None Include="Resources\image_tvicon_template_nodes.png" />
+    <Content Include="change_logs.txt" />
+    <Content Include="webDesignerInstallLogoSmall.bmp" />
+    <Content Include="webDesigner.iss" />
+    <Content Include="webDesigner\css\theme\images\ui-bg_flat_0_aaaaaa_40x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-bg_flat_55_fbec88_40x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-bg_glass_75_d0e5f5_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-bg_glass_85_dfeffc_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-bg_glass_95_fef1ec_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-bg_inset-hard_100_f5f8f9_1x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-bg_inset-hard_100_fcfdfd_1x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-icons_217bc0_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-icons_2e83ff_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-icons_469bdd_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-icons_6da8d5_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-icons_cd0a0a_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-icons_d8e7f3_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\images\ui-icons_f9bd01_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\css\theme\jquery-ui.custom.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\i18n\translations.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\i18n\translations_en.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\i18n\translations_fr.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="webDesigner\images\casewise.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="webDesigner\images\diagramcursor.cur">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\images\pictures\picture-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\images\treeview\ajax-loader.gif" />
+    <Content Include="webDesigner\images\treeview\file.gif" />
+    <Content Include="webDesigner\images\treeview\folder-closed.gif" />
+    <Content Include="webDesigner\images\treeview\folder.gif" />
+    <Content Include="webDesigner\images\treeview\minus.gif" />
+    <Content Include="webDesigner\images\treeview\plus.gif" />
+    <Content Include="webDesigner\images\treeview\treeview-black-line.gif" />
+    <Content Include="webDesigner\images\treeview\treeview-black.gif" />
+    <Content Include="webDesigner\images\treeview\treeview-default-line.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\images\treeview\treeview-default.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\images\treeview\treeview-famfamfam-line.gif" />
+    <Content Include="webDesigner\images\treeview\treeview-famfamfam.gif" />
+    <Content Include="webDesigner\images\treeview\treeview-gray-line.gif" />
+    <Content Include="webDesigner\images\treeview\treeview-gray.gif" />
+    <Content Include="webDesigner\images\treeview\treeview-red-big.gif" />
+    <Content Include="webDesigner\images\treeview\treeview-red-line.gif" />
+    <Content Include="webDesigner\images\treeview\treeview-red.gif" />
+    <Content Include="webDesigner\images\_loading.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\js\cw-portal-plugin.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwCustomerSiteActions.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwDiagramManager.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwDiagramManager.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwEditProperties.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwEditProperties.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwJSAPI.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwLoadUniquePage.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwPortalPlugin.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwPortalPlugin.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwPropertiesGroups.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwPropertiesGroups.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwSearchEngine\cwSearchEngine.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwSearchEngine\cwSearchEngine.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwSiteActions.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwTabManager.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwTooltipManager.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\cwTooltipManager.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwAPI\jquery.cwDiagramManager.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwBehaviours\cwAccordion.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwBehaviours\cwAccordion.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwBehaviours\cwTreeView.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwBehaviours\cwTreeView.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwBehaviours\cwWorldMap.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwBehaviours\cwWorldMap.JomCom.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwBehaviours\cwWorldMap.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\CanvasCamera\CanvasCamera.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\CanvasCamera\CanvasCameraPoint.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramCanvas\DiagramCanvas.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramCanvas\DiagramCanvasNavigationBar.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramCanvas\DiagramCanvasNavigationExploded.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramCanvas\DiagramCanvasToolTip.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramContext.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramDesigner\DiagramDesigner.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramDesigner\DiagramDesignerAPI.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramDesigner\DiagramDesignerIncludeType.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramDesigner\DiagramDesignerVerticalType.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramJoiner.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramShape.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DiagramTextZone.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwDiagram\DrawEngine.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.a2zlist.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.a2zlist.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.list-box-with-properties.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.list-box-with-properties.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.apm-application.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.apm-application.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.diagram-box.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.diagram-box.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.diagram.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.diagram.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.empty.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.empty.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.list-box.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.list-box.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.list.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.list.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.listbycategory.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.listbycategory.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.single-page.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\cwLayouts\layout.single-page.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\date.format.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\date.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\excanvas.compiled.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\excanvas.save.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\jquery\jquery-ui.custom.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\jquery\jquery.cookie.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\jquery\jquery.i18n.properties-min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\jquery\jquery.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\jquery\jquery.mousewheel.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\jquery\jquery.tooltip.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\jquery\jquery.treeview.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\json-ie7.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\kendoui.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesigner\libs\external\underscore.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="webDesignerInstallLogo.bmp" />
+    <Content Include="XMLExport\ObjectTypeExport.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Output\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cwGraphAPI\cwGraphAPI.csproj">
+      <Project>{3c99b35a-3aa5-4a9e-90dd-7b0c7288def9}</Project>
+      <Name>cwGraphAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

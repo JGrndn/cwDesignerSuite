@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <!-- FILE NAME DU MODELE -->
+    <add key="Model_Filename" value="PWC_TECH"/>
+
+    <!-- DATABASE DE CONNEXION-->
+    <add key="Database" value="Autonome"/>
+    
+    <!-- LOGIN + MOT DE PASSE SOUS LA FORME LOGIN:MOT DE PASSE -->
+    <add key="Credentials" value="ADMIN:"/>
+
+    <!-- DEFAULT ROLE -->    
+    <add key="DEFAULT_ROLE" value="cwCollector"/>
+
+    <!-- APPLICATION NAME -->
+    <add key="APPLICATION_NAME" value="Casewise Services AppStore"/>
+
+    <!-- FOR ORACLE DB SET THE CONFIG PATH or LOG PATH -->
+    <!--
+      <add key="CONFIG_FILES_PATH" value="C:\Users\Pouya MOHTACHAM\Documents\Visual Studio 2008\Projects\Casewise\cwAPIManager\cwAPIManager\bin\Debug\configs"/>
+      <add key="LOGS_PATH" value="C:\Users\Pouya MOHTACHAM\Documents\Visual Studio 2008\Projects\Clients\Nantes Métropole\nmAPIManager\nmAPIManager\bin\Debug\logs\"/>    
+    -->
+    
+    
+    <!-- OBLIGATOIRE : CASEWISE BIN FOLDER PATH -->
+    <add key="CASEWISE_BIN_FOLDER" value="C:/Program Files/Casewise/CM10/BIN/"/>
+  </appSettings>
+
+</configuration>

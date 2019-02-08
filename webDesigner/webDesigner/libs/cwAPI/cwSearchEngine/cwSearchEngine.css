@@ -1,0 +1,21 @@
+span.cw-searchengine-item-found{
+	background-color:#3163c8;
+	border-radius:10px;
+	-moz-border-radius:10px;	
+	padding:2px;
+	color:white;		
+}
+
+
+.cw-searchengine-search-area{
+	width:100%;
+	text-align:center;
+	margin:0px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.cw-searchengine-suggest {
+	width:400px;
+	height:30px;
+}

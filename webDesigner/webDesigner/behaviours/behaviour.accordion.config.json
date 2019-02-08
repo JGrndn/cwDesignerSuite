@@ -1,0 +1,12 @@
+﻿{
+	"name" : "accordion", 
+	"display-name" : "Accordion", 
+	"description" : "Toogle List Children",
+	"enabled-layouts" : ["list"],
+	"properties" : [
+		{
+			"name" : "removeIfEmptyChildren",
+			"type" : "boolean"
+		}
+	]
+}

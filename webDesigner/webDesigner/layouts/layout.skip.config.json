@@ -1,0 +1,6 @@
+{
+	"name" : "skip", 
+	"display-name" : "Skip", 
+	"description" : "Allow you to skip the current node",
+	"js-class-name" : "LayoutSkip"
+}

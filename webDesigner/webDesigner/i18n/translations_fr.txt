@@ -1,0 +1,12 @@
+diagram_option_zoomin = Zoomer sur le diagramme
+diagram_option_zoomout = Dézoomer sur le diagramme
+diagram_option_resize =Redimentionner le diagramme
+diagram_option_search = Rechercher dans le diagramme
+diagram_option_fullscreen = Plein Ecran
+diagram_option_fullscreen_normal = Taille normale
+diagram_option_parent_diagram = Naviguer vers diagramme parent
+index_search= Rechercher
+global_yes= Oui
+global_no= Non
+search_option_reset = Réinitialiser
+search_option_search = Rechercher

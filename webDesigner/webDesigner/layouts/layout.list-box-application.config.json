@@ -1,0 +1,6 @@
+{
+	"name": "list-box-application",
+	"display-name": "Application List box",
+	"description": "Simple ul/li list with div/a container for the name",
+	"js-class-name": "LayoutBoxApplication"
+}

@@ -1,0 +1,33 @@
+﻿
+ul.cw-accordion-header{
+  margin:0px;
+  padding:0px;
+}
+
+li.cw-accordion-header{
+	margin:10px;
+	list-style:none;
+}
+
+div.cw-accordion-header{
+   padding-left: 10px;
+   text-align:left;
+}
+
+a.cw-accordion-header{
+ font-size:14px;  
+}
+
+ul.cw-accordion-content{
+	margin:0px;
+}
+
+div.cw-accordion-content{
+	padding:0px 10px 0px 10px;
+}
+
+span.cw-accordion{
+	display:inline-block;
+	margin-right:10px;
+	margin-top:10px;
+}

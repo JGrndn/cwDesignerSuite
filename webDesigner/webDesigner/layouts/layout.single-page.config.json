@@ -1,0 +1,6 @@
+{
+	"name" : "single-page", 
+	"display-name" : "Single Page", 
+	"description" : "Allow to organize your single pages",
+	"js-class-name" : "LayoutSinglePage"
+}

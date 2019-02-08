@@ -1,0 +1,6 @@
+{
+	"name" : "apm-application", 
+	"display-name" : "APM Application", 
+	"description" : "Application Display Layout For APM",
+	"js-class-name" : "LayoutAPMApplication"
+}

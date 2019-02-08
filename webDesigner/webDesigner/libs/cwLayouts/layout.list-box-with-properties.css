@@ -1,0 +1,23 @@
+
+.cw-listbox-with-properties-header{
+	margin-top: 4px;
+	text-align: left;
+	line-height: 28px;
+}
+.cw-listbox-with-properties-content{
+	border: 1px solid #85B5D9;
+}
+a{
+	text-decoration:none;
+}
+.cw-ui-icon
+{
+	float: left;
+    margin-right: 2px;  
+    height: 16px;
+    width: 16px; 
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -99999px;
+}

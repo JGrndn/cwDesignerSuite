@@ -1,0 +1,6 @@
+{
+	"name" : "empty", 
+	"display-name" : "Empty", 
+	"description" : "Without creating html code",
+	"js-class-name" : "LayoutEmpty"
+}

@@ -1,0 +1,6 @@
+{
+	"name" : "diagram", 
+	"display-name" : "Diagram", 
+	"description" : "Draw the diagrams in a html5 Canvas",
+	"js-class-name" : "LayoutDiagram"
+}

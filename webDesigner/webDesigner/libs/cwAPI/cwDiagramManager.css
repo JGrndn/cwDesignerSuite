@@ -1,0 +1,106 @@
+﻿
+#cw-diagram-debugger{
+  position:fixed;
+
+}
+
+div.cw-widget-box{
+  border:2px solid #A2D0EA;
+  border-radius:8px;
+}
+div.cw-widget-box .ui-widget-header{
+  border:none;
+  border-bottom:2px solid #A2D0EA;
+}
+
+div.cw-diagram-design-container{
+  color:#004488;
+  border:2px solid #A2D0EA;
+  border-radius:8px;
+  margin-bottom:10px;
+}
+
+div.cw-diagram-design-container .ui-widget-header{
+  border:none;
+  border-bottom:2px solid #A2D0EA;
+}
+
+div.cw-diagram-zone-header{
+  width:100%;
+  color:#004488;
+  border-bottom:2px solid #D1E8F5;
+  height:14px;
+  font-size:12px;
+}
+
+div.cw-diagram-zone-header a{
+  font-size:12px;
+  display: inline-block;
+  cursor:pointer;
+}
+
+div.cw-diagram-zone-header a.selected{
+  font-weight:bold;
+}
+
+
+div.cw-diagram-zone, div.cw-diagram-designer-zone{
+  border:2px solid #EEEEEE;
+}
+
+div.cw-diagram-zone-isSelected, div.cw-diagram-designer-zone-isSelected{
+  border-color:#A2D0EA;
+}
+
+.cw-diagram-option-search-input{
+  height:22px;
+  width:200px;
+}
+
+.cw-diagram-options-li a{
+  width:22px;
+  height:22px;
+}
+
+.cw-diagram-options-li{
+  list-style-image:none!important;
+}
+
+div.cw-diagram-zone canvas, div.cw-diagram-designer-zone canvas{
+    float:left;
+}
+
+ul.cw-diagram-options{
+  display:none;
+  padding:5px;
+  padding-top:10px;
+  margin:0px;
+  position:absolute;
+  border:none;
+  z-index:50;
+  float:left;
+}
+
+.cw-diagram-options li{
+  margin-bottom:4px;
+  list-style:none;
+  z-index:205;
+}
+
+.cw-diagram-zone, div.cw-diagram-designer-zone{
+  width:95%;
+  margin:10px auto 10px auto;
+  height:100%;
+}
+
+.cw-diagram-canvas{
+  width:95% !important;
+  height:auto;
+  z-index:100;
+}
+
+div.cw-diagramShape-info{
+  display: none !important;
+ /* border: solid 1px #A2D0EA;;
+  background-color: #FFFFFF;*/
+}

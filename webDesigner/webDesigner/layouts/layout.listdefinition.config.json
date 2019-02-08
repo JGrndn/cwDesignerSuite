@@ -1,0 +1,6 @@
+{
+	"name" : "listdefinition", 
+	"display-name" : "Definition List", 
+	"description" : "Only for Definition List",
+	"js-class-name" : "LayoutListDefinition"
+}

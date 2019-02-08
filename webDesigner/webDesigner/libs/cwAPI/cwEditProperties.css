@@ -1,0 +1,11 @@
+﻿
+/* cw-edit-property-options */
+ul.cw-edit-property-options{
+	margin:0px;
+	padding: 0px;
+	display: inline-block;
+}
+
+ul.cw-edit-property-options li, ul.cw-edit-property-options input{
+	display: inline-block;
+}

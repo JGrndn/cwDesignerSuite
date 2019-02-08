@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webDesigner", ".\webDesigner\webDesigner.csproj", "{789040ED-3FCB-40AD-9044-D2B8A60BE924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cwGraphAPI", ".\cwGraphAPI\cwGraphAPI.csproj", "{3C99B35A-3AA5-4A9E-90DD-7B0C7288DEF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{59465179-B85E-4583-B272-92B22C94D411}"
+	ProjectSection(SolutionItems) = preProject
+		cwDesignerSuite.vsmdi = cwDesignerSuite.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = cwDesignerSuite.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		R2011|x86 = R2011|x86
+		R2013|x86 = R2013|x86
+		R2015|x86 = R2015|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{789040ED-3FCB-40AD-9044-D2B8A60BE924}.Debug|x86.ActiveCfg = Debug|x86
+		{789040ED-3FCB-40AD-9044-D2B8A60BE924}.Debug|x86.Build.0 = Debug|x86
+		{789040ED-3FCB-40AD-9044-D2B8A60BE924}.R2011|x86.ActiveCfg = R2011|x86
+		{789040ED-3FCB-40AD-9044-D2B8A60BE924}.R2011|x86.Build.0 = R2011|x86
+		{789040ED-3FCB-40AD-9044-D2B8A60BE924}.R2013|x86.ActiveCfg = R2013|x86
+		{789040ED-3FCB-40AD-9044-D2B8A60BE924}.R2013|x86.Build.0 = R2013|x86
+		{789040ED-3FCB-40AD-9044-D2B8A60BE924}.R2015|x86.ActiveCfg = R2015|x86
+		{789040ED-3FCB-40AD-9044-D2B8A60BE924}.R2015|x86.Build.0 = R2015|x86
+		{3C99B35A-3AA5-4A9E-90DD-7B0C7288DEF9}.Debug|x86.ActiveCfg = Debug|x86
+		{3C99B35A-3AA5-4A9E-90DD-7B0C7288DEF9}.Debug|x86.Build.0 = Debug|x86
+		{3C99B35A-3AA5-4A9E-90DD-7B0C7288DEF9}.R2011|x86.ActiveCfg = R2011|x86
+		{3C99B35A-3AA5-4A9E-90DD-7B0C7288DEF9}.R2011|x86.Build.0 = R2011|x86
+		{3C99B35A-3AA5-4A9E-90DD-7B0C7288DEF9}.R2013|x86.ActiveCfg = R2013|x86
+		{3C99B35A-3AA5-4A9E-90DD-7B0C7288DEF9}.R2013|x86.Build.0 = R2013|x86
+		{3C99B35A-3AA5-4A9E-90DD-7B0C7288DEF9}.R2015|x86.ActiveCfg = R2015|x86
+		{3C99B35A-3AA5-4A9E-90DD-7B0C7288DEF9}.R2015|x86.Build.0 = R2015|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

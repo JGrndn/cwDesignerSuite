@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <LibConfigurationPath>2015</LibConfigurationPath>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C99B35A-3AA5-4A9E-90DD-7B0C7288DEF9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Casewise.GraphAPI</RootNamespace>
+    <AssemblyName>cwGraphAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <FileAlignment>512</FileAlignment>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.2.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ManifestCertificateThumbprint>F772436147CEA639DFCCBD55CB064C61DED66A7B</ManifestCertificateThumbprint>
+    <SignAssembly>false</SignAssembly>
+    <SignManifests>false</SignManifests>
+    <AssemblyOriginatorKeyFile>cwGraphAPI.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <LibConfigurationPath>2015</LibConfigurationPath>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'R2011|x86' ">
+    <LibConfigurationPath>2011</LibConfigurationPath>
+    <OutputPath>bin\Release2011\</OutputPath>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'R2013|x86' ">
+    <LibConfigurationPath>2013</LibConfigurationPath>
+    <OutputPath>bin\Release2013\</OutputPath>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'R2015|x86'">
+    <LibConfigurationPath>2015</LibConfigurationPath>
+    <OutputPath>bin\Release2015\</OutputPath>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Casewise.Services.PropertyInterfaces, Culture=neutral">
+      <HintPath>.\lib\$(LibConfigurationPath)\Casewise.Services.PropertyInterfaces.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Casewise.Shared.Definitions,Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lib\$(LibConfigurationPath)\Casewise.Shared.Definitions.dll</HintPath>
+    </Reference>
+    <Reference Include="Casewise.Shared.RuleDefinitions,Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lib\$(LibConfigurationPath)\Casewise.Shared.RuleDefinitions.dll</HintPath>
+    </Reference>
+    <Reference Include="CasewiseDatabaseSelection2005,Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lib\$(LibConfigurationPath)\CasewiseDatabaseSelection2005.dll</HintPath>
+    </Reference>
+    <Reference Include="CasewiseDataTier2004,Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lib\$(LibConfigurationPath)\CasewiseDataTier2004.dll</HintPath>
+    </Reference>
+    <Reference Include="CasewiseLogonUI2004, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lib\$(LibConfigurationPath)\CasewiseLogonUI2004.dll</HintPath>
+    </Reference>
+    <Reference Include="CasewiseMenuPlugIns2002, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lib\$(LibConfigurationPath)\CasewiseMenuPlugIns2002.dll</HintPath>
+    </Reference>
+    <Reference Include="CasewiseServices,Culture=neutral">
+      <HintPath>.\lib\$(LibConfigurationPath)\CasewiseServices.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="COMFacade, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lib\$(LibConfigurationPath)\COMFacade.dll</HintPath>
+    </Reference>
+    <Reference Include="ICMDataProvider, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lib\$(LibConfigurationPath)\ICMDataProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SVG, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lib\$(LibConfigurationPath)\SVG.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Win32Facade,Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lib\$(LibConfigurationPath)\Win32Facade.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\API\cwConnection.cs" />
+    <Compile Include="Sources\API\cwJoinerPoint.cs" />
+    <Compile Include="Sources\API\cwLogonPolicy.cs" />
+    <Compile Include="Sources\API\cwShape.cs" />
+    <Compile Include="Sources\API\Light\cwLightAssociationType.cs" />
+    <Compile Include="Sources\API\Light\cwLightDiagram.cs" />
+    <Compile Include="Sources\API\Light\cwLightModel.cs" />
+    <Compile Include="Sources\API\Light\cwLightObject.cs" />
+    <Compile Include="Sources\API\Light\cwLightObjectType.cs" />
+    <Compile Include="Sources\API\cwJoiner.cs" />
+    <Compile Include="Sources\API\Light\cwLightPane.cs" />
+    <Compile Include="Sources\API\Light\cwLightProperty.cs" />
+    <Compile Include="Sources\API\Light\cwModel\cwAssociationTypeManager.cs" />
+    <Compile Include="Sources\API\Light\cwModel\cwLightObjectJSON.cs" />
+    <Compile Include="Sources\API\Light\cwModel\cwLookup.cs" />
+    <Compile Include="Sources\API\Light\cwModel\cwLookupManager.cs" />
+    <Compile Include="Sources\API\Light\cwModel\cwPaneManager.cs" />
+    <Compile Include="Sources\API\Light\cwModel\cwPropertyManager.cs" />
+    <Compile Include="Sources\API\Light\Diagrams\cwDiagramLoader.cs" />
+    <Compile Include="Sources\API\Light\Diagrams\cwDiagramLoaderJoinersManager.cs" />
+    <Compile Include="Sources\API\Light\Diagrams\cwDiagramLoaderShapesManager.cs" />
+    <Compile Include="Sources\API\Light\Diagrams\cwPaletteManager.cs" />
+    <Compile Include="Sources\API\Light\Diagrams\cwVirtualJoiner.cs" />
+    <Compile Include="Sources\API\Light\Diagrams\cwDiagramLoaderManager.cs" />
+    <Compile Include="Sources\API\Light\Properties\CwProperty.cs" />
+    <Compile Include="Sources\API\Node\cwLightNode.cs" />
+    <Compile Include="Sources\API\Node\cwLightNodeAssociationType.cs" />
+    <Compile Include="Sources\API\Node\cwLightNodeObjectType.cs" />
+    <Compile Include="Sources\API\ObjectCopier.cs" />
+    <Compile Include="Sources\ApplicationCultureLoader.cs" />
+    <Compile Include="Sources\Batch\ApplicationBatchManager.cs" />
+    <Compile Include="Sources\ApplicationConfigurationLoader.cs" />
+    <Compile Include="Sources\cwOperationLight.cs" />
+    <Compile Include="Sources\GUI\Launcher\cwPictureBoxButtonHelp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\createItemPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\createItemPopup.Designer.cs">
+      <DependentUpon>createItemPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwCreateItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwLauncherLoadingImage.cs" />
+    <Compile Include="Sources\GUI\Launcher\cwPictureBoxButtonBack.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwPictureBoxButtonClose.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwPictureBoxButtonOptions.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwLoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwLoadingForm.Designer.cs">
+      <DependentUpon>cwLoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwPictureBoxButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwButtonModel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwLauncherGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwLauncherGUI.Designer.cs">
+      <DependentUpon>cwLauncherGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwButtonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\Launcher\cwPictureBoxLogo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\ProgramManager\cwProgramManager.cs" />
+    <Compile Include="Sources\ProgramManager\cwProgramManagerOptions.cs" />
+    <Compile Include="Sources\PSF\cwPSFPropertyDataGridViewComboBoxCell.cs" />
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxItemName.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFToolTips\cwPSFToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxTreeViewPaneProperties.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFNodes\cwPSFTreeNodeObjectNodeAssociationType.cs" />
+    <Compile Include="Sources\PSF\PSFNodes\cwPSFTreeNodeObjectNodeObjectType.cs" />
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxComboBoxModel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxFile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxFolder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxComboBoxTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxFilterProperties.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxTreeViewModel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxTreeViewAssociationType.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxTreeViewProperties.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxComboBoxObjectType.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxComboBoxAssociationType.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxComboBoxProperties.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFTableLayoutPropertiesBoxes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFNodes\cwPSFTreeNodeObjectNode.cs" />
+    <Compile Include="Sources\PSF\cwTreeView\cwTreeNodePane.cs" />
+    <Compile Include="Sources\PSF\PSFNodes\cwPSFTreeNodeConfigurationNode.cs" />
+    <Compile Include="Sources\PSF\cwTreeView\cwTreeNodeProperty.cs" />
+    <Compile Include="Sources\PSF\cwTreeView\cwTreeNodeAssociationType.cs" />
+    <Compile Include="Sources\GUI\cwEditModeGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sources\GUI\cwEditModeGUI.Designer.cs">
+      <DependentUpon>cwEditModeGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\PSF\cwPSFContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\Exceptions\cwExceptionNodeValidation.cs" />
+    <Compile Include="Sources\Exceptions\cwExceptionWarning.cs" />
+    <Compile Include="Sources\PSF\cwPSFPropertiesBoxes.cs" />
+    <Compile Include="Sources\cwTools.cs" />
+    <Compile Include="Sources\PSF\cwPSFQueryManager.cs" />
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxString.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxInt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxFloat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\cwTreeView\cwTreeNodeModel.cs" />
+    <Compile Include="Sources\PSF\cwTreeView\cwTreeNodeObject.cs" />
+    <Compile Include="Sources\PSF\cwTreeView\cwPSFTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFNodes\cwPSFTreeNode.cs" />
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxDataGrid.Designer.cs">
+      <DependentUpon>cwPSFPropertyBoxDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\Exceptions\cwExceptionFatal.cs" />
+    <Compile Include="Sources\Exceptions\cwExceptionSimpleNotice.cs" />
+    <Compile Include="Sources\Exceptions\cwExceptionWrongOptionValueInConfigurationFile.cs" />
+    <Compile Include="Sources\Exceptions\cwExceptionMissingOptionInConfigurationFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.fr-FR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\GUI\cwEditModeGUI.resx">
+      <DependentUpon>cwEditModeGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\GUI\Launcher\createItemPopup.resx">
+      <DependentUpon>createItemPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\GUI\Launcher\cwCreateItemForm.resx">
+      <DependentUpon>cwCreateItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\GUI\Launcher\cwLoadingForm.resx">
+      <DependentUpon>cwLoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\GUI\Launcher\cwLauncherGUI.resx">
+      <DependentUpon>cwLauncherGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\PSF\PSFProperties\cwPSFPropertyBoxDataGrid.resx">
+      <DependentUpon>cwPSFPropertyBoxDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="batFiles\batch_test_psf.bat" />
+    <None Include="batFiles\deploy_release_items.bat" />
+    <None Include="batFiles\deploy_release_to_share_folder.bat" />
+    <None Include="batFiles\deploy_to_cm_folder.bat" />
+    <None Include="cwGraphAPI.snk" />
+    <None Include="cwGraphAPI.vsdoc" />
+    <None Include="Doxyfile" />
+    <None Include="Samples\silent-Install-webDesigner.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Local.testsettings" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="batFiles\release_psf_package_2009.bat" />
+    <None Include="batFiles\release_psf_package_men.bat" />
+    <None Include="batFiles\release_psf_package_men_site.bat" />
+    <None Include="batFiles\release_psf_package_webdesigner.bat" />
+    <None Include="TraceAndTestImpact.testsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PDPicHlp.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Casewise_Icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\image_loading.gif" />
+    <Content Include="Resources\image_logo_graphapi.png" />
+    <Content Include="Resources\image_model_hover.gif" />
+    <Content Include="Resources\image_model_small.png" />
+    <Content Include="Resources\image_option_add_32x32.png" />
+    <Content Include="Resources\image_option_close_32x32.png" />
+    <Content Include="Resources\image_option_help_32x32.png" />
+    <Content Include="Resources\image_option_prev_32x32.png" />
+    <Content Include="Resources\image_tvicon_delete.png" />
+    <Content Include="Resources\image_tvicon_generate.png" />
+    <Content Include="Resources\image_tvicon_layout.png" />
+    <Content Include="Resources\image_tvicon_minus.png" />
+    <Content Include="Resources\image_tvicon_node.png" />
+    <Content Include="Resources\image_tvicon_plus.png" />
+    <Content Include="Resources\image_tvicon_reload.png" />
+    <Content Include="Resources\image_tvicon_save.png" />
+    <Content Include="Samples\configSamples\sample.app.config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\2012\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

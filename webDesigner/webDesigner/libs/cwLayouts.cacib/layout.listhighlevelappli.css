@@ -1,0 +1,35 @@
+
+.highlevelapplication {
+ display: inline-block;
+   background: url(../../images/sprite_application.png) no-repeat top left;
+}
+/*.sprite-application{ background-position: 0 -383px; width: 16px; height: 16px; } 
+.sprite-applicationcomponent{  background-position: 0 -449px; width: 16px; height: 16px; } 
+.sprite-applicationcomponentinstance{ background-position: 0 -515px; width: 16px; height: 16px; } 
+.sprite-applicationinstance{ background-position: 0 -581px; width: 16px; height: 16px; } 
+.sprite-applicationsuite{  background-position: 0 -647px; width: 16px; height: 16px; } 
+.sprite-applicationsuiteinstance{ background-position: 0 -713px; width: 16px; height: 16px; } 
+.sprite-hasdiagram{ background-position: 0 -779px; width: 16px; height: 16px; }
+*/
+ul.application>li{
+	padding: 2px;
+	margin-top: 4px;
+}
+
+
+
+.sprite-application{ background-position: 0 -185px; width: 16px; height: 16px; } 
+.sprite-applicationcomponent{ background-position: 0 -251px; width: 16px; height: 16px; } 
+.sprite-applicationcomponentinstance{ background-position: 0 -317px; width: 16px; height: 16px; } 
+.sprite-applicationinstance{ background-position: 0 -383px; width: 16px; height: 16px; } 
+.sprite-applicationsuite{ background-position: 0 -449px; width: 16px; height: 16px; } 
+.sprite-applicationsuiteinstance{ background-position: 0 -515px; width: 16px; height: 16px; } 
+.sprite-hasdiagram{ background-position: 0 -581px; width: 16px; height: 16px; } 
+.sprite-puce_arrow_down{ background-position: 0 -647px; width: 7px; height: 4px; } 
+.sprite-puce_arrow_down_green{ background-position: 0 -701px; width: 7px; height: 6px; } 
+.sprite-puce_arrow_down_yellow{ background-position: 0 -757px; width: 7px; height: 6px; } 
+.sprite-puce_arrow_right{ background-position: 0 -813px; width: 4px; height: 7px; } 
+.sprite-status-active{ background-position: 0 -870px; width: 16px; height: 16px; } 
+.sprite-status-indevelopment{ background-position: 0 -936px; width: 16px; height: 16px; } 
+.sprite-status-businessstopped{ background-position: 0 0px; width: 16px; height: 16px; }
+.sprite-status-other{ background-position: 0 -1002px; width: 16px; height: 16px; } 

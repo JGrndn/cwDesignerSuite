@@ -1,0 +1,28 @@
+
+span.version {
+ display: inline-block;
+   background: url(../../images/sprite_standard.png) no-repeat top left;
+   width: 16px; height: 16px;
+}
+/*.sprite-application{ background-position: 0 -383px; width: 16px; height: 16px; } 
+.sprite-applicationcomponent{  background-position: 0 -449px; width: 16px; height: 16px; } 
+.sprite-applicationcomponentinstance{ background-position: 0 -515px; width: 16px; height: 16px; } 
+.sprite-applicationinstance{ background-position: 0 -581px; width: 16px; height: 16px; } 
+.sprite-applicationsuite{  background-position: 0 -647px; width: 16px; height: 16px; } 
+.sprite-applicationsuiteinstance{ background-position: 0 -713px; width: 16px; height: 16px; } 
+.sprite-hasdiagram{ background-position: 0 -779px; width: 16px; height: 16px; }
+*/
+ul.version>li{
+	padding: 2px;
+	margin-top: 4px;
+}
+
+span.sprite-circle_acceptable{ background-position: 0 -119px; width: 16px; height: 16px; } 
+span.sprite-circle_frozen{ background-position: 0 -185px; width: 16px; height: 16px; } 
+span.sprite-circle_obsolete{ background-position: 0 -251px; width: 16px; height: 16px; } 
+span.sprite-circle_standard{ background-position: 0 -317px; width: 16px; height: 16px; } 
+span.sprite-circle_test{ background-position: 0 -383px; width: 16px; height: 16px; } 
+.sprite-puce_arrow_down{ background-position: 0 -449px; width: 7px; height: 4px; } 
+.sprite-puce_arrow_down_green{ background-position: 0 -503px; width: 7px; height: 6px; } 
+.sprite-puce_arrow_down_yellow{ background-position: 0 -559px; width: 7px; height: 6px; } 
+.sprite-puce_arrow_right{ background-position: 0 -615px; width: 4px; height: 7px; } 

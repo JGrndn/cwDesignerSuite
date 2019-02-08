@@ -1,0 +1,6 @@
+{
+	"name" : "table", 
+	"display-name" : "Table", 
+	"description" : "Simple ul/li list with div/a container for the name",
+	"js-class-name" : "LayoutTable"
+}

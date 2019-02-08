@@ -1,0 +1,6 @@
+{
+	"name": "listversion",
+	"display-name": "Version List",
+	"description": "Simple ul/li list with div/a container for the name",
+	"js-class-name": "LayoutListVersion"
+}

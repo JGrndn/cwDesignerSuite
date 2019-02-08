@@ -1,0 +1,12 @@
+li.is_application {
+    list-style: none;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 0px;
+    padding: 0px;    
+    vertical-align: middle;
+ }
+
+ span.othername-application{
+ 	color:grey;
+ }

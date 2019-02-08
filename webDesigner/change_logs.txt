@@ -1,0 +1,29 @@
+﻿Version 1.4.1.5
+1.add an option for search engine : a checkbox for "instant search".
+ If it is unchecked, two buttons will be added into index pages "search" and "reset"
+2.correct bug in previous version, in which the date format sent wrong results.
+3.comment generateddiagrams()
+
+Version 1.4.1.6
+1. layout empty2
+Instead of displaying data level by level,people can hide certain level's data, what's more, layout empty2 merge child-data if it appears more than once.
+2. layout listbox with properties
+Instead of just displaying the name of associated object as Layout list or Layout listbox
+This new listbox, display the object name as title, and the properties you checked as contents.
+
+Version 1.4.1.7
+For atos
+Debug-2009.2
+
+Version 1.4.1.8
+1. all browser now have the same behavior --> load diagram image (png files) instead using html5 technology
+
+Version 1.4.1.9
+1. Correction of a bug preventing the diagram styles (from template) to be loaded in JSON files.
+2. Delete PNG files before creating diagram image, if export option is selected.
+
+Version 1.4.1.10
+1. Ability to use HTML5 technology to display regions on diagrams (associations, property, etc.)
+
+Version 1.4.2.3
+1. Have a possiblity to generate a json file which contains a diagram hierarchy

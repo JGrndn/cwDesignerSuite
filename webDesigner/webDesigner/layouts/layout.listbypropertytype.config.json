@@ -1,0 +1,6 @@
+{
+	"name" : "listbypropertytype", 
+	"display-name" : "List By User Defined Property Type", 
+	"description" : "Simple ul/li list with div/a container for the name",
+	"js-class-name" : "LayoutListByPropertyType"
+}

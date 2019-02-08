@@ -1,0 +1,1 @@
+﻿START /W webUtility.exe -connection Autonome -model S4LYMTRW -username ADMIN -password "" -id 1
